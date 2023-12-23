@@ -2,11 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Rubik+Doodle+Shadow&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arimo&family=Nunito:wght@500&family=Rubik+Doodle+Shadow&display=swap');
 
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
 
 body{
-    background-image: linear-gradient(283deg, rgba(228, 228, 228,0.04) 0%, rgba(228, 228, 228,0.04) 30%,rgba(130, 130, 130,0.04) 30%, rgba(130, 130, 130,0.04) 49%,rgba(31, 31, 31,0.04) 49%, rgba(31, 31, 31,0.04) 100%),linear-gradient(297deg, rgba(228, 228, 228,0.04) 0%, rgba(228, 228, 228,0.04) 20%,rgba(130, 130, 130,0.04) 20%, rgba(130, 130, 130,0.04) 60%,rgba(31, 31, 31,0.04) 60%, rgba(31, 31, 31,0.04) 100%),linear-gradient(242deg, rgba(228, 228, 228,0.04) 0%, rgba(228, 228, 228,0.04) 29%,rgba(130, 130, 130,0.04) 29%, rgba(130, 130, 130,0.04) 48%,rgba(31, 31, 31,0.04) 48%, rgba(31, 31, 31,0.04) 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
-    overflow-x: hidden;
     margin: 0%;
+    
 }
 
 /* header */
@@ -16,12 +19,13 @@ body{
     padding: 0%;
     color: black;
     background-color: white;
-    position: static;
+    position:sticky;
+    z-index: 1;
     top: 0%;
     left: 0%;
     display: flex;
     justify-content: space-around;
-    min-width: 100vw-10px;
+    width: 100vw-10px;
     height:5vh;
 }
 .header>h1{
@@ -62,34 +66,104 @@ body{
 
 /* body */
 
+/* home */
+
+.mydetails1{
+    background-image: linear-gradient(293deg, rgba(228, 228, 228,0.04) 0%, rgba(228, 228, 228,0.04) 30%,rgba(130, 130, 130,0.04) 30%, 
+                    rgba(130, 130, 130,0.04) 49%,rgba(31, 31, 31,0.04) 49%, rgba(31, 31, 31,0.04) 100%),linear-gradient(297deg,
+                     rgba(228, 228, 228,0.04) 0%, rgba(228, 228, 228,0.04) 20%,rgba(130, 130, 130,0.04) 20%, rgba(130, 130, 130,0.04) 60%,
+                     rgba(31, 31, 31,0.04) 60%, rgba(31, 31, 31,0.04) 100%),linear-gradient(242deg, rgba(228, 228, 228,0.04) 0%, 
+                     rgba(228, 228, 228,0.04) 29%,rgba(130, 130, 130,0.04) 29%, rgba(130, 130, 130,0.04) 48%,rgba(31, 31, 31,0.04) 48%,
+                      rgba(31, 31, 31,0.04) 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
+    width: 100vw-10px;
+    height: fit-content;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
 .introvideo{
     position: relative;
-    top: 120px;
-    left: 60px;
-    
+    top: 10%;
+    filter: drop-shadow(2px 2px 0px white);
 }
+
 .info{
-    min-width: 25%;
-    max-width: 50%;
-    position: absolute;
-    top: 150px;
-    left: 600px;
-    color: azure;
-    float: left;
-}
+    margin-top: 15px;
+    color: white;
+    width: fit-content;
+}   
+
 .info>h1{
-    font-family:Rubik Doodle Shadow;
-    font-size: 2.5rem;
+    font-family: Rubik Doodle Shadow;
     text-wrap: nowrap;
-}
-.info>p{
-    font-family:Arimo ;
-    line-height: 25px;
+    font-weight: bolder;
+    font-size: 60px;
 }
 
 .imp{
-    font-weight:bolder;
-    
+    font-weight: bolder;
 }
 
+.info>p{
+    min-width: 50%;
+   
+    line-height: 25px;
+    font-family:Nunito ;
+    font-size: larger;
+    
+    
+   
+}
+
+/* skill */
+
+.mydetails2{
+    background-image: linear-gradient(293deg, rgba(228, 228, 228,0.04) 0%, rgba(228, 228, 228,0.04) 30%,rgba(130, 130, 130,0.04) 30%, 
+                    rgba(130, 130, 130,0.04) 49%,rgba(31, 31, 31,0.04) 49%, rgba(31, 31, 31,0.04) 100%),linear-gradient(297deg,
+                     rgba(228, 228, 228,0.04) 0%, rgba(228, 228, 228,0.04) 20%,rgba(130, 130, 130,0.04) 20%, rgba(130, 130, 130,0.04) 60%,
+                     rgba(31, 31, 31,0.04) 60%, rgba(31, 31, 31,0.04) 100%),linear-gradient(242deg, rgba(228, 228, 228,0.04) 0%, 
+                     rgba(228, 228, 228,0.04) 29%,rgba(130, 130, 130,0.04) 29%, rgba(130, 130, 130,0.04) 48%,rgba(31, 31, 31,0.04) 48%,
+                      rgba(31, 31, 31,0.04) 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
+    width: 100vvw-10px;
+    height: fit-content;
+    display: grid;
+    
+    
+   
+}
+
+.mydetails2>h1{
+    color: white;
+    font-family: Rubik Doodle Shadow;
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.layout{
+    
+
+    display: grid;
+    grid-template-columns: repeat(1,1fr 1fr 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.skill{
+    display: inline-block;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 150px;
+    margin-right: 150px;
+
+}
+
+.skill>img{
+    object-fit: fill;
+}
+
+.skill>img:hover{
+    filter: drop-shadow(2px 2px 15px white);
+}
 
