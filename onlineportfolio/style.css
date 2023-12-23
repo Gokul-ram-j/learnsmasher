@@ -1,0 +1,30 @@
+/* header */
+.header{
+    color: white;
+    background-color: black;
+    position: absolute;
+    padding: 0;
+    border: 3px solid red;
+    display: flex;
+    justify-items: space-around;
+    min-width: 98vw;
+}
+.header>h1{
+    width: 50%;
+}
+.header>ul{
+    max-width: 40%;
+}
+
+.header>ul{
+    display:black;
+    
+}
+
+.header>ul>li{
+
+    display: inline-block;
+    margin-right: 100px;
+    list-style: none;
+    font-size: larger;
+}
