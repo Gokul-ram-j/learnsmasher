@@ -1,30 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Rubik+Doodle+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Nunito:wght@500&family=Rubik+Doodle+Shadow&display=swap');
+
+
+body{
+    background-image: linear-gradient(283deg, rgba(228, 228, 228,0.04) 0%, rgba(228, 228, 228,0.04) 30%,rgba(130, 130, 130,0.04) 30%, rgba(130, 130, 130,0.04) 49%,rgba(31, 31, 31,0.04) 49%, rgba(31, 31, 31,0.04) 100%),linear-gradient(297deg, rgba(228, 228, 228,0.04) 0%, rgba(228, 228, 228,0.04) 20%,rgba(130, 130, 130,0.04) 20%, rgba(130, 130, 130,0.04) 60%,rgba(31, 31, 31,0.04) 60%, rgba(31, 31, 31,0.04) 100%),linear-gradient(242deg, rgba(228, 228, 228,0.04) 0%, rgba(228, 228, 228,0.04) 29%,rgba(130, 130, 130,0.04) 29%, rgba(130, 130, 130,0.04) 48%,rgba(31, 31, 31,0.04) 48%, rgba(31, 31, 31,0.04) 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
+    overflow-x: hidden;
+    margin: 0%;
+}
+
 /* header */
+
 .header{
-    color: white;
-    background-color: black;
-    position: absolute;
-    padding: 0;
-    border: 3px solid red;
+    margin: 0%;
+    padding: 0%;
+    color: black;
+    background-color: white;
+    position: static;
+    top: 0%;
+    left: 0%;
     display: flex;
-    justify-items: space-around;
-    min-width: 98vw;
+    justify-content: space-around;
+    min-width: 100vw-10px;
+    height:5vh;
 }
 .header>h1{
-    width: 50%;
+    font-family: Nunito;
+    text-align: center;
+    margin: 0%;
+    width: 30%;
+    text-wrap: nowrap;
+    
 }
 .header>ul{
-    max-width: 40%;
+    margin: 0%;
+    min-width: fit-content;
+    max-width: 70%;
 }
 
 .header>ul{
-    display:black;
-    
+    display:block;
+    justify-content:space-evenly;
+    justify-items: space-around;
+    font-size: 20px;
 }
 
 .header>ul>li{
-
+    
+    margin-right: 60px;
     display: inline-block;
-    margin-right: 100px;
     list-style: none;
     font-size: larger;
+    font-family: Nunito;
 }
+
+.header>ul>li>a{
+    color: black;
+    text-decoration: none;
+    
+}
+
+/* body */
+
+.introvideo{
+    position: relative;
+    top: 120px;
+    left: 60px;
+    
+}
+.info{
+    min-width: 25%;
+    max-width: 50%;
+    position: absolute;
+    top: 150px;
+    left: 600px;
+    color: azure;
+    float: left;
+}
+.info>h1{
+    font-family:Rubik Doodle Shadow;
+    font-size: 2.5rem;
+    text-wrap: nowrap;
+}
+.info>p{
+    font-family:Arimo ;
+    line-height: 25px;
+}
+
+.imp{
+    font-weight:bolder;
+    
+}
+
+
