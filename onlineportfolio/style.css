@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Rubik+Doodle+Shadow&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arimo&family=Nunito:wght@500&family=Rubik+Doodle+Shadow&display=swap');
-
+*{
+    color: white;
+    font-family: Nunito;
+}
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -29,6 +32,7 @@ body{
     height:5vh;
 }
 .header>h1{
+    color: black;
     font-family: Nunito;
     text-align: center;
     margin: 0%;
@@ -40,14 +44,13 @@ body{
     margin: 0%;
     min-width: fit-content;
     max-width: 70%;
-}
-
-.header>ul{
     display:block;
     justify-content:space-evenly;
     justify-items: space-around;
     font-size: 20px;
 }
+
+
 
 .header>ul>li{
     
@@ -85,6 +88,7 @@ body{
 .introvideo{
     position: relative;
     top: 10%;
+    left: 10%;
     filter: drop-shadow(2px 2px 0px white);
 }
 
@@ -127,6 +131,7 @@ body{
                       rgba(31, 31, 31,0.04) 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
     width: 100vvw-10px;
     height: fit-content;
+    width: 100vw-10px;
     display: grid;
     
     
@@ -144,7 +149,8 @@ body{
     
 
     display: grid;
-    grid-template-columns: repeat(1,1fr 1fr 1fr);
+    grid-template-columns: repeat(1,1fr 1fr 1fr 1fr 1fr);
+    grid-auto-columns: auto;
     column-gap: 20px;
     row-gap: 20px;
 }
@@ -154,16 +160,112 @@ body{
     color: white;
     width: fit-content;
     height: fit-content;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 50px;
+    
+    
 
 }
 
 .skill>img{
     object-fit: fill;
+    width: 200px;
+    height: 100px;
 }
 
 .skill>img:hover{
     filter: drop-shadow(2px 2px 15px white);
 }
 
+/* internship */
+
+.mydetails3{
+    background-image: linear-gradient(293deg, rgba(228, 228, 228,0.04) 0%, rgba(228, 228, 228,0.04) 30%,rgba(130, 130, 130,0.04) 30%, 
+                    rgba(130, 130, 130,0.04) 49%,rgba(31, 31, 31,0.04) 49%, rgba(31, 31, 31,0.04) 100%),linear-gradient(297deg,
+                     rgba(228, 228, 228,0.04) 0%, rgba(228, 228, 228,0.04) 20%,rgba(130, 130, 130,0.04) 20%, rgba(130, 130, 130,0.04) 60%,
+                     rgba(31, 31, 31,0.04) 60%, rgba(31, 31, 31,0.04) 100%),linear-gradient(242deg, rgba(228, 228, 228,0.04) 0%, 
+                     rgba(228, 228, 228,0.04) 29%,rgba(130, 130, 130,0.04) 29%, rgba(130, 130, 130,0.04) 48%,rgba(31, 31, 31,0.04) 48%,
+                      rgba(31, 31, 31,0.04) 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
+    width: 100vvw-10px;
+    height: fit-content;
+    width: 100vw-10px;
+    border: 2px solid black;
+}
+
+
+.mydetails3>h1{
+    color: white;
+    font-family: Rubik Doodle Shadow;
+    font-size: 4.5rem;
+    text-align: center;
+    
+}
+
+.interns{
+    margin: 15px;
+    border-bottom: 2px solid white;
+    padding: 25px;
+}
+
+.interns>h2,h3{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    font-family: Arimo ;
+}
+
+interns>h3{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    font-family: Arimo ;
+}
+.interns>p{
+    color: white;
+}
+
+.projects>li>h4,p{
+    color: white;
+}
+
+.points{
+    font-family: Nunito;
+}
+
+
+/* footer */
+
+.footer{
+   border: 2px solid rgba(72, 72, 72, 0.04);
+    max-width: 100vw-10px;
+    max-height:fit-content;
+    background-image: linear-gradient(293deg, rgba(228, 228, 228,0.04) 0%, rgba(228, 228, 228,0.04) 30%,rgba(130, 130, 130,0.04) 30%, 
+                    rgba(130, 130, 130,0.04) 49%,rgba(31, 31, 31,0.04) 49%, rgba(31, 31, 31,0.04) 100%),linear-gradient(297deg,
+                     rgba(228, 228, 228,0.04) 0%, rgba(228, 228, 228,0.04) 20%,rgba(130, 130, 130,0.04) 20%, rgba(130, 130, 130,0.04) 60%,
+                     rgba(31, 31, 31,0.04) 60%, rgba(31, 31, 31,0.04) 100%),linear-gradient(242deg, rgba(228, 228, 228,0.04) 0%, 
+                     rgba(228, 228, 228,0.04) 29%,rgba(130, 130, 130,0.04) 29%, rgba(130, 130, 130,0.04) 48%,rgba(31, 31, 31,0.04) 48%,
+                      rgba(31, 31, 31,0.04) 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0)); 
+}
+
+.footeritems{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    list-style: none;
+}
+
+.socialmedia{
+    display: inline-block;
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 100px;
+    height: 100px;    
+}
+
+.icons{
+    width: 75px;
+    height: 75px;
+}
