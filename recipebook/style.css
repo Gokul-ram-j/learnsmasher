@@ -1,4 +1,173 @@
-#title{
-    text-align: center;
-    background: #1f0197;
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
+
+body{
+    margin: 0%;
+}
+/* intro section */
+
+.intro{
+    width: 100vw-10px;
+    height: 100vh;
+    background-image: url("./top-view-table-full-delicious-food-composition.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 2px solid black;
+    
+}
+
+.title{
+    font-size: 150px;
+    text-wrap: nowrap;
+    text-align: center;
+    font-family: 'Lemon', serif;
+    -webkit-text-stroke: 1px white; 
+    color: transparent;
+}
+
+
+.btngroup{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btngroup>a>button{
+    background:inherit;
+    height: 40px;
+    border-radius: 20px ;
+    border: 0px;
+    font-size: 20px;
+    width: 200px;
+    color: white;
+    box-shadow: 5px 5px 20px white;
+    text-wrap: nowrap;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.btngroup>a>button:hover{
+    background: #000;
+}
+
+/* add section */
+.head{
+    background: #000;
+    font-family: 'Noto Sans', sans-serif;    
+    color: white;
+    text-align: center;
+    margin: 0%;
+}
+
+.recipeformsection{
+    padding: 10px;
+    width: 100vw-10px;
+    min-height: 300px;
+    max-height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.recipeform{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 100%;
+    width:500px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 20px;
+}
+
+.recipeform>button, .recipeform>input{
+    height: 30px;
+    padding: 5px;
+    margin-top: 30px;
+}
+
+.recipeform>button{
+    background-color:black;
+    color:white;
+    border-radius: 20px;
+}
+
+.recipeform>button:hover{
+   color: black;
+   background-color: #fff;
+   box-shadow: 2px 2px 5px black;
+}
+
+/* recipe list */
+
+.recipelist{
+    width: 100vw-10px;
+    min-height: 200px;
+    height: fit-content+50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow-y: hidden;
+    
+}
+
+.recipe{
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("./top-view-food-frame-with-copy-space.jpg");
+    background-size: cover; 
+    background-position: center;  
+    width: 60vw;
+    min-height: 100px;
+    max-height: fit-content;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 20px ;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    position: relative;
+
+}
+.recipe>h2, .recipe>div>h3 ,.recipe>div>p{
+    margin-left: 50%;
+    font-family: 'Caveat', cursive;
+    color: rgb(255, 255, 255);
+    margin-top: 0%;
+    
+    
+}
+.recipe>h2{
+    font-family: 'Lemon', serif;
+    font-size: 70px;
+
+}
+.recipe>div>h3{
+    
+    font-size: 25px;
+
+}
+.recipe>div>p{
+    
+    font-size: 15px;
+
+}
+
+.deletebtn{
+    border-radius: 50% 50% 50% 50%;
+    width: 35px;
+    height: 35px;
+    background-image: url('./cancel.png');
+    background-size: cover;
+    position:absolute;
+    top: -19px;
+    left: 97%;
+    border: 2px solid white;
+
+}
+
+.deletebtn:hover{
+    scale: 1.2;
+}
+
+

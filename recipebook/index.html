@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RECIPE BOOK</title>
 </head>
 <body>
-    <h1 id="title">RECIPE BOOK</h1>
+    <!-- intro -->
+    <div class="intro">
+        <h1 class="title">RECIPE BOOK</h1>
+        <div class="btngroup">
+            <a href="#recipelist"><button type="button">VIEW RECIPE</button></a>
+            <a href="#addsection"><button type="button">ADD  RECIPE</button></a>
+        </div>
+        
+    </div>
+    <!-- Add section -->
+    <div id="addsection" class="addrecipe">
+        <h1 class="head">ADD RECIPE</h1>
+        <div class="recipeformsection">
+            <form class="recipeform" action="">
+                <input id="rname" type="text" class="recipename" class="form-control" placeholder="RECIPE NAME">
+                <input id="ringredient" type="text" class="recipeingredients" class="form-control" placeholder="INGREDIENTS">
+                <input id="rprocedure" type="textfield" class="recipeprocedure" class="form-control" placeholder="PROCEDURE">
+                <button type="submit">ADD</button>
+            </form>
+        </div>
+    </div>
+    <!-- recipe list -->
+    <h1 class="head">MY RECIPES</h1>
+    <div id="recipelist" class="recipelist">
+        <div class="recipe">
+            <h2>briyani</h2>
+            <div class="recipeingredients">
+                <h3>INGREDIENTS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate consectetur sit inventore optio odio, sunt iure delectus blanditiis obcaecati animi, incidunt modi nisi vero nihil. Magni fuga ducimus veritatis ab quae eveniet rem maxime similique deserunt sed officiis, expedita qui illo, minima amet illum porro, ex libero quibusdam nam voluptatibus in distinctio nemo. Consequatur dolores nam hic, possimus blanditiis enim nesciunt tempore a expedita unde delectus? Cupiditate vel libero dicta perspiciatis alias dolores nostrum error. Illo, ex nam eius, autem dolorem nesciunt repudiandae, modi debitis deleniti adipisci nostrum corrupti obcaecati. Eius excepturi tenetur fugiat ea cumque, blanditiis asperiores incidunt dolor. Officiis iure vel dicta nesciunt molestias obcaecati voluptate magnam itaque. Saepe eius laboriosam voluptatum natus laudantium corporis perferendis, fugit exercitationem quia distinctio fuga. Perferendis ullam tempora hic eius eligendi unde at culpa molestias saepe esse! Itaque fuga et quis. Facilis voluptatem obcaecati provident odit non unde natus quam nobis odio.</p>
+            </div>
+            <div class="recipeprocedure">
+                <h3>PROCEDURE</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, aliquam porro repudiandae officiis officia voluptate explicabo adipisci, iste nihil soluta nesciunt pariatur tenetur, cumque magni exercitationem impedit consectetur quisquam minus. Ex quaerat ab repellendus ipsam dignissimos quod vitae rerum nulla dolorem, mollitia perspiciatis rem soluta magnam velit obcaecati aliquam alias possimus. Delectus odit aspernatur sed consequatur recusandae similique sunt architecto. Explicabo nulla ipsa qui sint obcaecati atque consequatur velit id voluptas, deleniti laborum dolor commodi fugit? Repellat fuga autem culpa dignissimos, eius dolores. Blanditiis rerum tempore ab, quidem fugiat esse sapiente molestiae optio dolorum voluptatum voluptate natus voluptas excepturi qui sed. Consectetur ab, vitae cupiditate rem minima distinctio ipsam architecto delectus natus? Et provident ipsa ipsam rem id numquam! Natus laborum ullam tempore eligendi libero labore laudantium corrupti, quas quia corporis voluptatibus sunt quos ex voluptatem adipisci amet! Sunt quibusdam error totam nam maiores ex non earum amet, labore assumenda.</p>
+            </div>
+            <button type="button" class="deletebtn" onclick="remove(this)"></button>
+        </div>   
+    </div>
+    <script src="./app.js"></script>
 </body>
 </html>
