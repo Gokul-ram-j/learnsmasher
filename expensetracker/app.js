@@ -90,14 +90,18 @@ form.addEventListener("submit",(e)=>{
         listOfTransactionExpense.push([name,amount])
     }
     console.log(listOfTransactionExpense,listOfTransactionIncome)
-    dincome.innerHTML=cincome
-    dexpense.innerHTML=cexpense
-    dtotal.innerHTML=ctotal
+    show()
     google.charts.setOnLoadCallback(drawChart);
 
 
 
 })
+
+function show(){
+    dincome.innerHTML=cincome
+    dexpense.innerHTML=cexpense
+    dtotal.innerHTML=ctotal
+}
 
 function removeelem(elem){
         elem.parentElement.remove()
@@ -111,7 +115,8 @@ function removeelem(elem){
                         console.log(i)
                         listOfTransactionIncome.splice(i,1)
                         google.charts.setOnLoadCallback(drawChart);
-
+                        ctotal-=removeamount
+                        cincome-=removeamount
                     }
                 }
         }
@@ -122,10 +127,14 @@ function removeelem(elem){
                     console.log(i)
                     listOfTransactionExpense.splice(i,1)
                     google.charts.setOnLoadCallback(drawChart);
+                    ctotal+=parseInt(removeamount)
+                    cexpense-=removeamount
 
                 }
             }
         }
+
+        show()
         
     
 }
