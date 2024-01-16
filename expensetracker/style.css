@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Kalam:wght@300&display=swap');
+
+*{
+    font-family: 'Black Ops One', system-ui;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+.intro{
+    display: grid;
+    grid-template-columns: 2.5fr 3fr;
+    height: 99vh;
+    width: 100vw-10px;
+    padding: 10px;
+}
+.bgi{
+    background-image: url("./image/img1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.icontext{
+    padding: 20px;
+    background-image: url("./image/img1.jpg");
+    background-size: cover;
+    background-position:center;
+    background-clip: text; 
+
+}
+.icontext h1{
+    text-align: center;
+    margin-top:15% ;
+    font-size: 120px;
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+}
+.buttongrp{
+    display: flex;
+    justify-content: space-evenly;
+}
+.buttongrp>a>button{
+    font-family: 'Black Ops One', system-ui;
+    font-family: 'Kalam', cursive;
+    padding: 10px;
+    color: white;
+    background: black;
+    border-radius: 10px;
+}
+.buttongrp>a>button:hover, .addbtn:hover{
+    color:  black;
+    background-color: white;
+    border: 2px solid black;
+}
+.buttongrp>a>button:active, .addbtn:active{
+    scale: 0.9;
+}
+
+/* main display */
+.maindisplay{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+}
+
+.maindisplay>div{
+    margin: auto;
+    padding: 10px;
+    border-radius:25px;
+    min-width: 50%;
+    max-width: fit-content;
+}
+
+.maindisplay>div:nth-child(1){
+    background-color:rgb(5, 195, 5) ;
+    color: white;
+    box-shadow: 2px 2px 10px rgb(5, 195, 5);
+
+}
+
+.maindisplay>div:nth-child(2){
+    background-color:  rgb(201, 8, 8);
+    color: white;
+    border: 5px solid rgb(201, 8, 8);
+    box-shadow: 2px 2px 10px  rgb(201, 8, 8);
+}
+
+.maindisplay>div:nth-child(3){
+    background-color: rgb(50, 50, 255) ;
+    color: white;
+    box-shadow: 2px 2px 10px  rgb(50, 50, 255);
+
+}
+
+
+.maindisplay h3{
+    text-align: center;
+    font-size: 20px;
+}
+
+/* add section */
+
+.addform{
+    height: fit-content;
+    width: 500px;
+    padding: 15px;
+    margin: auto;
+    border: 2px solid black;
+    margin-bottom: 20px;
+   
+}
+
+.radiogrp{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h1{
+    text-align: center;
+}
+
+form>div{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.addbtn{
+    background: green;
+    margin: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 300px;
+    height: 30px;
+    font-family: 'Black Ops One', system-ui;
+    font-family: 'Kalam', cursive;
+    color: white;
+    background: black;
+    border-radius: 10px;
+}
+
+/* transaction history */
+
+.transaction{
+    width: 80vw;
+    margin: auto;
+    min-height: 50px;
+    border: 2px solid black;
+    border-radius: 10px ; 
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 2fr 5fr 1fr;
+    padding: 20px;
+    position: relative;
+}
+
+.income{
+    background-image: url("./image/increment.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 50%;
+    margin: auto;
+}
+
+.expense{
+    background-image: url("./image/decrement.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 50%;
+    margin: auto;
+}
+
+.transaction>div>h1{
+    margin-top: 60%;
+}
+
+.deletebtn{
+    background-color: black;
+    position: absolute;
+    color: white;
+    border: 3px solid white;
+    padding: 3px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    top: -25px;
+    left: 97%;
+}
+
+.deletebtn:hover{
+    background-color: white;
+    color: black;
+    scale: 1.2;
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px black;
+}
+
+.deletebtn:active{
+    scale: .9;
+}
+
+.graph{
+    margin: 20px;
+    padding: 20px;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    height: fit-content;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+
+
+
+
