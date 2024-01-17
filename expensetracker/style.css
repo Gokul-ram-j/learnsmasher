@@ -150,9 +150,9 @@ form>div{
 /* transaction history */
 
 .transaction{
-    width: 80vw;
+    width: 50vw;
     margin: auto;
-    min-height: 50px;
+    height: fit-content;
     border: 2px solid black;
     border-radius: 10px ; 
     margin-bottom: 30px;
