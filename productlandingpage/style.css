@@ -13,7 +13,7 @@ nav{
     width: 99.5vw;
     padding: 5px;
     height: fit-content;
-    mix-blend-mode: multiply;
+    mix-blend-mode:multiply;
 
 }
 nav>ul{
@@ -31,6 +31,11 @@ nav>ul>li{
     border: 2px solid white;
     padding: 5px;
 
+}
+
+li:hover{
+    color: red;
+    background: white;
 }
 
 
