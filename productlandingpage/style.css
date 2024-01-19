@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Signika+Negative&family=Teko:wght@300&display=swap');
 
 *{
     padding: 0%;
     margin: 0%;
     font-family: 'Lemon', serif;
 }
+
+
 
 nav{
     position: absolute;
@@ -82,6 +85,7 @@ li:hover{
     margin: auto;
     text-wrap: wrap;
     overflow-x: hidden;
+    font-family: 'Signika Negative', sans-serif;
 }
 
 /* dress collection */
@@ -101,12 +105,14 @@ h1{
     color: black;  
     margin-left: 50px;  
     text-align: center;
+    margin-top: 20px;
 }
 
 .hoodie{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
+    row-gap: 25px;
 }
 
 .item, .titem{
@@ -144,6 +150,10 @@ box-shadow:  -20px 20px 60px #bebebe,
     
 }
 
+.dressinfo>p{
+font-family: 'Signika Negative', sans-serif;
+font-size: small;
+}  
 
 
 h4{
@@ -195,6 +205,7 @@ p{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
+    row-gap: 25px;
 }
 
 
