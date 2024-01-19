@@ -17,14 +17,12 @@ nav{
     padding: 5px;
     height: fit-content;
     mix-blend-mode:multiply;
-
 }
 nav>ul{
     display: flex;
     justify-content: space-evenly;
     width: 100%;
     margin-top: 0%;
-
 }
 nav>ul>li{
     color: white;
@@ -33,13 +31,9 @@ nav>ul>li{
     margin-top: 10px;
     border: 2px solid white;
     padding: 5px;
-
 }
 
-li:hover{
-    color: red;
-    background: white;
-}
+
 
 
 
@@ -87,6 +81,17 @@ li:hover{
     overflow-x: hidden;
     font-family: 'Signika Negative', sans-serif;
 }
+
+.purchasebtn{
+    position:absolute;
+    width: fit-content;
+    height: fit-content;
+    z-index: 5;
+    top: -5%;
+    left: 42.5%;
+}
+
+
 
 /* dress collection */
 
@@ -225,9 +230,9 @@ button {
     box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
     transition: all 250ms;
     overflow: hidden;
-   }
+}
    
-   button::before {
+button::before {
     content: "";
     position: absolute;
     top: 0;
@@ -240,13 +245,12 @@ button {
     -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
     box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
     transition: all 250ms
-   }
+}
    
-   button:hover {
+button:hover {
     color: #e8e8e8;
-   }
+}
    
-   button:hover::before {
+button:hover::before {
     width: 100%;
-   }
-
+}
